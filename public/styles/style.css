@@ -1,0 +1,49 @@
+html{
+    background-color: white;
+    font-family: "helvetica neue";
+    background-color: black;
+    color: white;
+    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    animation: animatebg 15s linear infinite;
+}
+
+h1{
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 87vh;
+}
+
+table{
+    position: relative;
+    background-color: transparent;
+    backdrop-filter: blur(15px);
+    border: 2px solid rgba(255, 255, 255, .5);
+    color: white;
+    border-radius: 20px;
+}
+
+table, th, td{
+    text-align: left;
+    color: white;
+    background: transparent;
+}
+
+th, td{
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+@keyframes animatebg {
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
